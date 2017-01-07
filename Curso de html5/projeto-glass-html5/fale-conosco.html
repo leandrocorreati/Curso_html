@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html language="pt-br">
+<head>
+    <link rel="stylesheet" type = "text/css" href = "_css\estilo.css">
+    <meta charset="UTF-8"/>
+    <title>
+        Tudo Sobre Google Glass
+    </title>
+</head>
+<script language="JavaScript" src="_javascript/funcoes.js"></script>
+<body>
+<meta chaset="UTF-8"/>
+<div id="interface">
+    <header id="cabecalho">
+        <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+              <img id="icone" src="_imagens/contato.png">
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul type="disc">
+                <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contatopng')"><a href="specs.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form>
+      <section id="corpo-full">
+          <article id="noticia-principal">
+              <header id="cabeçalho-artigo">
+                  <hgroup>
+                      <h3>Fale Conosco > Contato</h3>
+                      <h1>Formulário de Contato</h1>
+                      <h2>por Leandro Corrêa</h2>
+                      <h3 class="direita">Atualizado em 11/Agosto/2016</h3>
+                  </hgroup>
+              </header>
+
+
+<fieldset id="usuario">
+  <legend >Identificação do Usuário</legend>
+    <p>Nome:&nbsp;&nbsp;<input type="text" name="tnome" id="cnome" size="30" maxlength="30" placeholder="Nome Completo"/> </p>
+    <p>Senha:&nbsp;<input type="password" name="tsenha" id="csenha" size="15" maxlength="8" placeholder="Digite Sua Senha"/></p>
+    <p>E-mail: <input type="email" name="temail" id="cemail" size="30" maxlength="40" placeholder="Digite Seu email"/></P>
+
+    <fieldset id="sexo"><legend>Sexo:</legend>
+        <input type="radio" name="tsexo" id="cmasculino"><label for="cmasculino">Masculino</label><br/>
+        <input type="radio" name="tsexo" id="cfeminino"><label for="cfeminino">Feminino</label></fieldset>
+    <p>Data de Nascimento:&nbsp;<input type="date" name="tnasc" id="cnasc"></p>
+  </fieldset>
+
+<fieldset id="endereco">
+<legend>Endereço do Usuário</legend>
+    <p>Logradouro:&nbsp;&nbsp;<input type="text" name="trua" id="crua" size="30" maxlength="80" placeholder="Rua, Avenida, Travessa"/></p>
+    <p>Número:&nbsp;&nbsp;<input type="number" name="tnum" id="cnum" min="0" max="999999"/></p>
+    <p>Estado:</p>
+    <p>Cidade:</p>
+  </fieldset>
+
+<fieldset id="mensagem">
+<legend>Mensagem do Usuário</legend>
+    Grau de Urgência:
+    Mensagem:
+</fieldset>
+
+<fieldset id="pedido">
+<legend>Quero um Google Glass</legend>
+    Gostaria de adquirir um Google Glass quando disponível
+    Cor:
+    Quantidade:
+    Preço Total: R$
+</fieldset>
+
+[BOTÃO ENVIAR]
+</form>
+
+    <footer id="rodape">
+        <p>Copyright &copy; 2013 - by Leandro Corrêa</p>
+        <p><a href="https://www.facebook.com/leandro.correa.9256" target="_blank">Facebook</a> | <a href="https://twitter.com/leandroelary"target="_blank">Twitter</a></p>
+    </footer>
+</div>
+</body>
+</html>
