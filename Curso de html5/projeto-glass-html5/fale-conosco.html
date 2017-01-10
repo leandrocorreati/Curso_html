@@ -40,12 +40,13 @@
                   </hgroup>
               </header>
 
-
+<form method="post" id="fcontato" action="malito:leandro_correa1987@hotmail.com">
 <fieldset id="usuario">
   <legend >Identificação do Usuário</legend>
-    <p>Nome:&nbsp;&nbsp;<input type="text" name="tnome" id="cnome" size="30" maxlength="30" placeholder="Nome Completo"/> </p>
-    <p>Senha:&nbsp;<input type="password" name="tsenha" id="csenha" size="15" maxlength="8" placeholder="Digite Sua Senha"/></p>
-    <p>E-mail: <input type="email" name="temail" id="cemail" size="30" maxlength="40" placeholder="Digite Seu email"/></P>
+    <p><label for ="cnome">Nome:</label>&nbsp;&nbsp;<input type="text" name="tnome" id="cnome" size="30" maxlength="30" placeholder="Nome Completo"/> </p>
+    <p><label for ="csenha">Senha:</label>&nbsp;<input type="password" name="tsenha" id="csenha" size="15" maxlength="8" placeholder="Digite Sua Senha"/></p>
+    <p><label for ="cemail">E-mail:</label>&nbsp;<input type="email" name="temail" id="cemail" size="30" maxlength="40" placeholder="Digite Seu email"/></P>
+  </fieldset>
 
     <fieldset id="sexo"><legend>Sexo:</legend>
         <input type="radio" name="tsexo" id="cmasculino"><label for="cmasculino">Masculino</label><br/>
@@ -55,24 +56,59 @@
 
 <fieldset id="endereco">
 <legend>Endereço do Usuário</legend>
-    <p>Logradouro:&nbsp;&nbsp;<input type="text" name="trua" id="crua" size="30" maxlength="80" placeholder="Rua, Avenida, Travessa"/></p>
-    <p>Número:&nbsp;&nbsp;<input type="number" name="tnum" id="cnum" min="0" max="999999"/></p>
-    <p>Estado:</p>
-    <p>Cidade:</p>
+    <p><label for ="crua">Logradouro:</label>&nbsp;&nbsp;<input type="text" name="trua" id="crua" size="30" maxlength="80" placeholder="Rua, Avenida, Travessa..."/></p>
+    <p><label for ="cnum">Número:</label>&nbsp;&nbsp;<input type="number" name="tnum" id="cnum" min="0" max="999999"/></p>
+    <p><label for ="cEst">Estado:</label>
+
+    <select name="tEst" id="cEst">
+      <optgroup label="Região Sudeste">
+          <option selected>São Paulo</<option>
+          <option value="RJ">Rio de Janeiro</<option>
+          <option value="MG">Minas Gerais</<option>
+      </optgroup>
+
+    <optgroup label="Região Sul">
+      <option value="SC">Santa Catarina</<option>
+      <option value="PR">Parána</<option>
+      <option value="RS">Rio Grande do Sul</option>
+    </optgroup>
+
+      </select></p>
+
+    <p><label for ="cCid">Cidade:</label>
+    <input type="text" name="tcid" id="ccid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"/></p>
+    <datalist id="cidades">
+      <option value="São José dos Campos"></option>
+      <option value="Jacarei"></option>
+      <option value="Caçapava"></option>
+      <option value="Taúbate"></option>
+      <option value="Pindamonhangaba"></option>
+
+
+
   </fieldset>
 
 <fieldset id="mensagem">
 <legend>Mensagem do Usuário</legend>
-    Grau de Urgência:
-    Mensagem:
+<p><label for ="curg">Grau de Urgência:&nbsp;&nbsp;</label>
+Min<input type="range" name="turg" id="curg" min="0" max="10" step="2"/>Max</p>
+
+
+
+<p><label for ="cmsg">Mensagem:</label></p>
+<div id="comentario">
+  <textarea name="tmsg" id="cmsg" cols="45" rows="5" placeholder="Deixe sua Mensagem"></textarea></p>
+</div>
+
+
 </fieldset>
 
 <fieldset id="pedido">
 <legend>Quero um Google Glass</legend>
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+<p><label for ="curg">Gostaria de adquirir um Google Glass quando disponível</label></p>
+<p><label for ="cmsg">Cor:</label></p>
+<p><label for ="curg">Quantidade:</label></p>
+<p><label for ="cmsg">Preço Total: R$</label></p>
 </fieldset>
 
 [BOTÃO ENVIAR]

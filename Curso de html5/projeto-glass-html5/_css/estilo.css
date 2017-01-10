@@ -307,3 +307,10 @@ footer#rodape a
 {
 	color:#606060;
 }
+
+
+div#comentario
+{
+position: relative;;
+left: 50px;
+}
